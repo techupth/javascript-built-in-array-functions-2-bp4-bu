@@ -374,15 +374,11 @@ const bills = [
 ];
 
 // Start coding here
-const billMembers = bills.filter((x) => {
-  // let nameBill ;
-  // if(x.member != null){
-  //   nameBill = x.member['name'];  
-  //   return nameBill;
-  // }else{
-    return x.total ;
-  
-  //}
-  
-});
+const billMembers = bills
+  .filter((bill) => {
+    return bill.member !== null;
+  })
+  .map((bill) => {
+    return bill.member.name;
+  });
 console.log(billMembers);

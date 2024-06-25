@@ -8,7 +8,9 @@ function updateCarCollection(carBrand) {
   console.log("New car collection is: "+carCollection)
   }
   else{
-    
+    return `${carBrand} has already existed in the ${
+      carCollection.indexOf(carBrand) + 1
+    } position of car collection.`;
 
   }
   
