@@ -374,3 +374,8 @@ const bills = [
 ];
 
 // Start coding here
+
+let sumTotalbill = bills.reduce((acumulator,price)=>{
+  return acumulator+price.total;
+},0);
+console.log(sumTotalbill);

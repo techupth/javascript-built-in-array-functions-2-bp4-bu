@@ -2,6 +2,16 @@ const carCollection = ["toyota", "fiat", "honda", "bmw"];
 
 function updateCarCollection(carBrand) {
   // Start coding here
+  let car = carCollection.includes(carBrand);
+  if(car === false){
+  carCollection.push(carBrand);
+  console.log("New car collection is: "+carCollection)
+  }
+  else{
+    
+
+  }
+  
 }
 
 //ผลลัพธ์ที่ควรได้จาก Example case

@@ -374,4 +374,4 @@ const bills = [
 ];
 
 // Start coding here
-const totalMembers;
+const totalMembers=0;
